@@ -1,0 +1,234 @@
+# Gitignore para Projeto Agenda LIFO - C++
+# Desenvolvido por Felipe Macedo - FMU
+# Projeto Acadêmico - Ciências da Computação
+
+# Executáveis
+*.exe
+*.out
+*.app
+agenda
+agenda_debug
+agenda_profile
+
+# Arquivos objeto e bibliotecas
+*.o
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+
+# Arquivos de debug
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Arquivos de profiling
+gmon.out
+*.gcov
+*.gcda
+*.gcno
+profile_report.txt
+
+# Arquivos temporários do compilador
+*.tmp
+*.temp
+*.cache
+
+# Arquivos de backup
+*~
+*.bak
+*.swp
+*.swo
+*#
+
+# Logs e relatórios
+*.log
+*.report
+*.txt.user
+
+# IDEs - Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# IDEs - Visual Studio Code
+.vscode/
+*.code-workspace
+
+# IDEs - CLion
+.idea/
+cmake-build-*/
+
+# IDEs - Code::Blocks
+*.cbp
+*.depend
+*.layout
+*.workspace
+
+# IDEs - Dev-C++
+*.dev
+*.win
+
+# IDEs - Qt Creator
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+*.moc.cpp
+*.qm
+*.prl
+
+# IDEs - Xcode
+*.xcodeproj/
+*.xcworkspace/
+
+# Build directories
+build/
+Build/
+BUILD/
+out/
+Out/
+OUT/
+bin/
+Bin/
+BIN/
+obj/
+Obj/
+OBJ/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# Make
+Makefile.user
+
+# Autotools
+.deps/
+.dirstamp
+*.la
+*.lo
+Makefile.in
+aclocal.m4
+autom4te.cache/
+config.guess
+config.h
+config.h.in
+config.log
+config.status
+config.sub
+configure
+depcomp
+install-sh
+ltmain.sh
+missing
+stamp-h1
+
+# Conan
+conanfile.txt.user
+conaninfo.txt
+conanbuildinfo.*
+conan.lock
+
+# vcpkg
+vcpkg_installed/
+
+# Package managers
+node_modules/
+.npm
+.yarn/
+
+# Documentação gerada
+docs/html/
+docs/latex/
+docs/xml/
+Doxyfile.bak
+
+# Testes
+test_results/
+*.test
+test_*.exe
+
+# Análise estática
+*.plist
+cppcheck-report.xml
+*.sarif
+
+# Profiling e debugging
+*.prof
+*.trace
+callgrind.out.*
+massif.out.*
+helgrind.out.*
+drd.out.*
+
+# Cobertura de código
+*.gcov
+coverage/
+lcov.info
+
+# Sanitizers
+*.san
+
+# Arquivos de sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Arquivos temporários do Windows
+*.tmp
+*.temp
+~$*
+
+# Arquivos temporários do Linux/macOS
+.nfs*
+
+# Arquivos de configuração local
+.env
+.env.local
+.env.*.local
+config.local.*
+
+# Arquivos de distribuição
+*.tar.gz
+*.zip
+*.rar
+*.7z
+dist/
+package/
+
+# Arquivos específicos do projeto
+# (Adicione aqui arquivos específicos que devem ser ignorados)
+
+# Manter estrutura de diretórios vazios
+!.gitkeep
+
+# Exceções - arquivos que devem ser versionados
+!Makefile
+!README.md
+!LICENSE
+!CHANGELOG.md
+!docs/*.md
+!src/*.cpp
+!src/*.h
+!src/*.hpp
