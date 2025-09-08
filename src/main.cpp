@@ -134,13 +134,14 @@ public:
         cout << "           LISTAGEM DE CONTATOS (LIFO)\n";
         cout << "===============================================\n";
         
-        for (int i = pilhaContatos.size() - 1; i >= 0; i--) {
-            cout << "Posicao [" << (pilhaContatos.size() - i) << "] ";
-            if (i == pilhaContatos.size() - 1) cout << "(TOPO)";
+        for (size_t i = pilhaContatos.size(); i > 0; i--) {
+            size_t idx = i - 1;
+            cout << "Posicao [" << (pilhaContatos.size() - idx) << "] ";
+            if (idx == pilhaContatos.size() - 1) cout << "(TOPO)";
             cout << "\n";
-            cout << "Nome: " << pilhaContatos[i].nome << "\n";
-            cout << "Telefone: " << pilhaContatos[i].telefone << "\n";
-            cout << "Email: " << pilhaContatos[i].email << "\n";
+            cout << "Nome: " << pilhaContatos[idx].nome << "\n";
+            cout << "Telefone: " << pilhaContatos[idx].telefone << "\n";
+            cout << "Email: " << pilhaContatos[idx].email << "\n";
             cout << "-----------------------------------------------\n";
         }
     }
